@@ -8,21 +8,33 @@ three.js
 [![Language Grade][lgtm]][lgtm-url]
 
 #### JavaScript 3D library ####
+主旨是方便易用、轻量、基于WEBGL渲染3D库。该JS库也提供Canvas 2D, SVG and CSS3D渲染示例。
 
-The aim of the project is to create an easy to use, lightweight, 3D library with a default WebGL renderer. The library also provides Canvas 2D, SVG and CSS3D renderers in the examples.
-
-[Examples](http://threejs.org/examples/) &mdash;
-[Documentation](http://threejs.org/docs/) &mdash;
-[Wiki](https://github.com/mrdoob/three.js/wiki) &mdash;
+[例子](http://threejs.org/examples/) &mdash;
+[文档](http://threejs.org/docs/) &mdash;
+[维基](https://github.com/mrdoob/three.js/wiki) &mdash;
 [Migrating](https://github.com/mrdoob/three.js/wiki/Migration-Guide) &mdash;
 [Questions](http://stackoverflow.com/questions/tagged/three.js) &mdash;
-[Forum](https://discourse.threejs.org/) &mdash;
+[论坛](https://discourse.threejs.org/) &mdash;
 [Slack](https://join.slack.com/t/threejs/shared_invite/enQtMzYxMzczODM2OTgxLTQ1YmY4YTQxOTFjNDAzYmQ4NjU2YzRhNzliY2RiNDEyYjU2MjhhODgyYWQ5Y2MyZTU3MWNkOGVmOGRhOTQzYTk) &mdash;
 [Discord](https://discordapp.com/invite/HF4UdyF)
 
-### Usage ###
 
-This code creates a scene, a camera, and a geometric cube, and it adds the cube to the scene. It then creates a `WebGL` renderer for the scene and camera, and it adds that viewport to the `document.body` element. Finally, it animates the cube within the scene for the camera.
+### Jerry代码解读 ###
+
+- Core
+
+Object3D.js
+
+
+- Scene.js
+
+
+
+### 示例 ###
+
+This code creates a scene, a camera, and a geometric cube, and it adds the cube to the scene.
+下面代码创建了场景、照相机、几何立方体，并将这个立方体加入到场景中。然后呢再为场景和照相机创建一个WebGL渲染器。并将视窗加入到document.body元素下。最终，这个立方体会在场景中根据照相机视角展现动效。
 
 ```javascript
 import * as THREE from 'js/three.module.js';
