@@ -23,12 +23,14 @@ three.js
 ### Jerry代码解读 ###
 
 - Core
-
-Object3D.js
-
-
 - Scene.js
 
+
+#### Core
+
+###### Object3D.js
+
+四元数Quaternion是简单的超复数。用来旋转物体而不引起可怕的万向节锁问题。
 
 
 ### 示例 ###
